@@ -9,7 +9,7 @@ public class Main8 {
         String s1=sc.next();
        // s1=s1.intern();
         String s2="krishna";
-        System.out.println(s1==s2);//false on same value
+        System.out.println(s1==s2);//false on  prompting same value
 
     }
 }

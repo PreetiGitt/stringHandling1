@@ -2,9 +2,59 @@ String- is a class in java.lang pkg.
 ---String Literal is also an object, sequence of char enclosed in double quotes and aka String.
 --- Term String is used for both literal and object.
 ---- not a char array like in c/c++.
-----String is a final class.
+----String is a FINAL class.
 ----String is a reference data type.
 ----String Literal is part of SCP(String Constant Pool), Pool is collection of similar items.SCP has unique entries.
 ----String is immutable.
 ----String in java does not terminate with NULL character.
 ----SCP is located ??(depends on JVM implementation)
+-----------------------------------------
+StringBuffer:
+came in java5
+Mutable,
+most of the methods of SB are synchronised.
+Overloaded insert(), append(), delete() etc.
+capacity concept
+
+
+--------------
+StringBuilder:
+Mutable
+methods are not synchronised
+useCase: not suitable for multiple requests, multiple threads
+-------------------------------------------
+REGEX:(inspired from PERL programming language)
+kind of a pattern,  RegEx AKA Pattern Matching.
+regEx helps in matching a pattern against a String.
+  1. ^char = Starts with
+  2. char$ = ends with
+  3. \\b 'char or word' \\b = word boundary in a sentence
+  4. \\b [aeiou]= word begins with a vowel
+  5.  \\b t= word in a sentence begins with t
+  6. \\b time \\b= sentence has word 'time'
+  ---> Quantifiers
+  7. ? = zero or 1
+  8. * = zero or more
+  9. + = one or more
+
+
+--------- ZERO LENGTH MATCH ()--- matching with the empty string, can occur in many cases
+ like beginning/ end of an input String
+  1. Quantifier matches with an empty String
+  ----ASSG---
+  1.Valid  Indian mobile number
+  2.credit card number
+  3. valid date
+     a. dd-mm-yyyy (15-12-2002)
+     b. d-m-yyyy (2-2-2002)
+     c. d-m-yy (2-2-94)
+     d. dd/mm/yyyy
+     e. yyyy-mm-dd
+  4. combining all of 3.
+  5. password pattern(min.8, max. 15 , at least one digit, leter,sp. chars)
+     a. not using % symbol
+     b. # not allowed
+  6.valid emailId
+
+
+
