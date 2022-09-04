@@ -36,6 +36,9 @@ regEx helps in matching a pattern against a String.
   7. ? = zero or 1
   8. * = zero or more
   9. + = one or more
+  10. / =
+  11. //. -> matches for ., takes as normal character OR Pattern.Literal flag
+  12. [^c]= excluding the char 'c'
 
 
 --------- ZERO LENGTH MATCH ()--- matching with the empty string, can occur in many cases
