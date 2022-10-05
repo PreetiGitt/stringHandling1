@@ -10,7 +10,7 @@ public class Main7 {
         Matcher m= pattern.matcher("abcd");// true for only 'b'*/
 
         Pattern pattern= Pattern.compile("bd");// b followed by d
-        Matcher m= pattern.matcher("abcdbdyz");
+        Matcher m= pattern.matcher("abcdbdyz");//true
         System.out.println(m.find());
         System.out.println(m.start()+" "+ m.end());// end gives +1 value
 

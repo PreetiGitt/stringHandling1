@@ -9,9 +9,9 @@ public class Main11 {
 
        // Pattern pattern= Pattern.compile("^b");// b at beginning
         Pattern pattern= Pattern.compile("b$"); // b at last
-       // Matcher m= pattern.matcher("abcdbdyzb");
-       Matcher m= pattern.matcher("bcdbdyzb");
-       // Matcher m= pattern.matcher("abcdbdyz");
+      //Matcher m= pattern.matcher("abcdbdyzb");
+      // Matcher m= pattern.matcher("bcdbdyzb");
+       Matcher m= pattern.matcher("abcdbdyz"); //false
 
         System.out.println(m.find());
     }
